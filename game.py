@@ -1,10 +1,10 @@
 from ast import If
 from random import choices, randint
 
-choises = ["rock", "paper", "scissor"]
+choices = ["rock", "paper", "scissor"]
 #player_choice  = paper
 
-player_choice = choises[1]
+player_choice = choices[1]
 
 print("inex 1 in the choice array is" + player_choice)
 
