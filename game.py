@@ -3,6 +3,9 @@ from random import choices, randint
 
 choices = ["rock", "paper", "scissor"]
 #player_choice  = paper
+player_lives = 3
+computer_lives = 3
+total_lives = 3
 
 player_choice = choices[1]
 
@@ -22,18 +25,30 @@ if computer_choice==player_choice:
  
 elif computer_choice == "rock":
     if player_choice == "scissors":
-        print("you lose")  
-    else:
-        print("you win")  
-        
-elif computer_choice == "paper":
-    if player_choice == "scissors": 
-        print("you win")  
-    else:
-        print("you lose")  
-        
-elif computer_choice == "scissors":
-    if player_choice == "paper": 
-        print("you lose")  
+        print("you lose")
+        player_lives -= 1
     else:
         print("you win")
+        computer_lives -= 1
+        
+elif computer_choice == "paper":
+    if player_choice == "scissors":
+        print("you win")
+        computer_lives -=1
+    else:
+        print("you lose")
+        player_lives -=1
+        
+elif computer_choice == "scissors":
+    if player_choice == "paper":
+        print("you lose")  
+        player_lives -= 1
+    else:
+        print("you win")
+        computer_lives -= 1
+        
+print("player lives:", player_lives)
+print("computer lives:", computer_lives)
+
+
+        
