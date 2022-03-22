@@ -38,7 +38,6 @@ while player_choice is False:
     
     player_choice = choices[1]
 
-    #print("index 1 in the choice array is" + player_choice)
     
     print("choose your weapon or type quit to exit\n")
     
@@ -47,8 +46,9 @@ while player_choice is False:
         print("you choose to quit")
         exit()
     print("user chose " + player_choice)
+    
+    print(----------------------)
 
-    # this will be AI choice -> random pick from the choices array
 
     computer_choice = choices[randint(0, 2)] 
     print("computer chose: " + computer_choice)
