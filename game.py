@@ -38,7 +38,7 @@ while player_choice is False:
     
     player_choice = choices[1]
 
-    #print("index 1 in the choice array is" + player_choice)
+   
     
     print("choose your weapon or type quit to exit\n")
     
